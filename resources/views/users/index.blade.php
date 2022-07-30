@@ -11,13 +11,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
     <!-- Styles -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> -->
+    <link href="https://bootswatch.com/5/litera/bootstrap.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
 
 </head>
 <style>
     .navbar {
-        background: rgb(0, 132, 255);
+        /* background: rgb(0, 132, 255); */
     }
 
     .navbar span {
@@ -35,7 +37,7 @@
 </style>
 
 <body>
-    <nav class="navbar">
+    <nav class="navbar bg-primary">
         <div class="container-fluid">
             <span class="navbar-brand mb-0 h1">Usuarios</span>
         </div>
@@ -111,6 +113,11 @@
         </div>
     </div>
 
+
+    <section class="blade">
+        <!-- Mas sobre plantillas con blade -->
+        @yield('content')
+    </section>
 </body>
 
 </html>
